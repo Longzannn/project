@@ -1,0 +1,19 @@
+.breadcrumd {
+    background-color: #f5f5f5;
+    height: 40px;
+}
+
+.breadcrumb-list {
+    position: relative;
+    max-width: 1200px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item {
+    font-size: 1.2rem;
+    padding: 0 5px;
+    color: #696973;
+}
