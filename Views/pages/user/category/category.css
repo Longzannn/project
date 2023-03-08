@@ -2,6 +2,7 @@
 @import url('/Views/common/css/base/root.css');
 @import url('/Views/common/css/header/header.css');
 @import url('/Views/common/css/breadcrumb/breadcrumb.css');
+@import url('/Views/common/css/footer/footer.css');
 
 .body {
     max-width: 1200px;
@@ -431,67 +432,7 @@
 
 
 
-/* Footer */
 
-#footer{
-    background: rgba(15, 48, 87, 1) ;
-    color: white;
-}
-#noidung{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-#dky{
-    padding-top: 20px;
-    padding-bottom: 40px;
-    border-bottom:1px solid rgba(1, 87, 106, 1);
-}
-.email{
-    color: #000;
-    vertical-align: middle;
-    height: 37px;
-    width: 67%;
-    margin-top: 10px;
-}
-.btn{
-    --bs-btn-border-radius: 0rem !important;
-    margin-top: 10px;
-
-}
-#checkbox{
-    margin-top: 15px;
-}
-#review{
-    padding-top: 40px;
-    padding-bottom: 80px;
-    
- 
-}
-ul li {
-    list-style: none;
-}
-#review2 a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-#review2 a:hover{
-    color: red;
-    text-decoration: none;
-}
-#review3 a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-#review3 a:hover{
-    color: red;
-    text-decoration: none;
-}
-#review4{
-    text-align: center;
-}
-#review4 img{
-    margin-top: 20px;
-}
 
 
 

@@ -16,6 +16,20 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizespeed;
+    overflow-y: overlay;
+}
+
+html *::-webkit-scrollbar {
+    width: 18px;
+}
+html *::-webkit-scrollbar-thumb {
+    background: rgba(214, 214, 221, 1);
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(240, 242, 245, 1);
+}
+html *::-webkit-scrollbar-track {
+    background: rgba(240, 242, 245, 1);
 }
 
 a {

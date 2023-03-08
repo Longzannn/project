@@ -2,9 +2,12 @@
 @import url('/Views/common/css/base/root.css');
 @import url('/Views/common/css/header/header.css');
 @import url('/Views/common/css/breadcrumb/breadcrumb.css');
+@import url('/Views/common/css/footer/footer.css');
+
 .feedback{
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .in4{
