@@ -1,0 +1,129 @@
+@import url('/Views/common/css/base/reset.css');
+@import url('/Views/common/css/base/root.css');
+@import url('/Views/common/css/header/header.css');
+@import url('/Views/common/css/breadcrumb/breadcrumb.css');
+@import url('/Views/common/css/footer/footer.css');
+
+.body {
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.col-7-5 {
+    flex: 0 0 auto;
+    width: 62.5%;
+}
+
+.col-4-2 {
+    flex: 0 0 auto;
+    width: 35%;
+}
+
+
+/* Không có sản phẩm */
+.page-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.error-not-found span {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.error-not-found .btn.btn-danger {
+    width: 100%;
+    height: 43px;
+    background-color: var(--text-red) !important;
+}
+
+.error-not-found .btn.btn-danger a {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: var(--text-white-color);
+    font-weight: bold;
+}
+
+/* Có sản phẩm */
+.cart-desc h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cart-table th, td:not(td:nth-child(2)) {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.td-img img {
+    width: 60px;
+    height: 60px;
+}
+
+.td-name {
+    color: #3a58ad;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 1.3rem;
+}
+
+.td-size {
+    font-size: 1.1rem;
+}
+
+.td-delete {
+    padding: 10px 40px;
+    background-color: var(--text-red);
+    border-radius: 10px;
+}
+
+.td-delete:hover {
+    background-color: red;
+}
+
+.td-delete a {
+    color: var(--text-white-color);
+}
+
+.cart-payment {
+    padding: 20px;
+    border: 1px solid rgba(221, 221, 221, 1);
+}
+
+.panels-total h4 {
+    margin-top: 5px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.cart-total {
+    margin-bottom: 20px;
+}
+
+.btn-payment {
+    width: 100%;
+    background-color: var(--text-red);
+    text-align: center;
+}
+
+.btn-payment:hover {
+    background-color: red;
+}
+
+.btn-payment button {
+    padding: 10px 40px;
+}
+
+.btn-payment a {
+    color: var(--text-white-color);
+}
