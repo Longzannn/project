@@ -169,6 +169,10 @@
     justify-content: center;
 }
 
+.cart:hover .cart-empty {
+    display: block;
+}
+
 .quantity {
     position: absolute;
     top: -8px;
@@ -188,6 +192,146 @@
     font-size: 3rem;
     color: var(--text-white-color);
 }
+
+/* Cart emtpy */
+.cart-empty {
+    position: absolute;
+    top: 55px;
+    width: 380px;
+    height: 60px;
+    background-color: var(--text-white-color);
+    right: 0;
+    z-index: 5;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    display: none;
+}
+
+.cart-empty::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: -7px;
+    right: 25px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #fff;
+    border-left: 15px solid transparent;
+    transform: rotate(-45deg);
+}
+
+.cart-empty::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: -20px;
+    right: 0px;
+    width: 116px;
+    height: 20px;
+    background-color: transparent;
+}
+
+.cart-empty span {
+    font-size: 1.3rem;
+}
+
+/* Cart products */
+
+.cart-products {
+    position: absolute;
+    top: 55px;
+    width: 400px;
+    background-color: var(--text-white-color);
+    right: 0;
+    z-index: 5;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    display: none;
+}
+
+.cart:hover .cart-products {
+    display: block;
+}
+
+.cart-products::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: -7px;
+    right: 25px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #fff;
+    border-left: 15px solid transparent;
+    transform: rotate(-45deg);
+}
+
+.cart-products::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: -20px;
+    right: 0px;
+    width: 116px;
+    height: 20px;
+    background-color: transparent;
+}
+
+.list-products-cart {
+    max-height: 275px;
+    overflow-y: auto;
+}
+
+.cart-products td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px !important;
+}
+
+.cart-products td:nth-child(2) {
+    text-align: left;
+}
+
+.td-name a {
+    font-size: 1.3rem;
+    color: rgba(58, 88, 173, 1) !important;
+}
+
+.td-name p {
+    font-size: 1.1rem;
+}
+
+.td-quantity,
+.td-total {
+    font-size: 1.3rem;
+}
+
+.cart-totals td {
+    font-size: 1.3rem;
+}
+
+.cart-totals td:nth-child(2),
+.cart-totals td {
+    text-align: right;
+}
+
+.cart-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 13px;
+}
+
+.cart-buttons button {
+    height: 43px;
+    padding: 0 20px;
+}
+
+.cart-buttons button a {
+    font-size: 1.6rem;
+}
+
+/* Menu */
 
 .menu-wrapper {
     width: 100%;
