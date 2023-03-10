@@ -1,13 +1,18 @@
-var productImages = document.querySelectorAll('.product-image img')
+var productImages = document.querySelectorAll('.product-image img');
 
 productImages.forEach((productImage) => {
-    var newSrc = productImage.getAttribute('newSrc')
-    var oldSrc = productImage.getAttribute('oldSrc')
+    var newSrc = productImage.getAttribute('newSrc');
+    var oldSrc = productImage.getAttribute('oldSrc');
+    var timeShow = null;
+    
     productImage.addEventListener('mouseover', () => {
-        productImage.src = newSrc
-    })
+        timeShow = setTimeout(() => {
+            productImage.src = newSrc;
+        }, 300);
+    });
 
     productImage.addEventListener('mouseout', () => {
-        productImage.src = oldSrc
-    })
-})
+        clearTimeout(timeShow);
+        productImage.src = oldSrc;
+    });
+});
