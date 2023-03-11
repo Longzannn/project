@@ -1,0 +1,98 @@
+@import url('/Views/common/css/base/reset.css');
+@import url('/Views/common/css/base/root.css');
+@import url('/Views/common/css/header/header.css');
+@import url('/Views/common/css/breadcrumb/breadcrumb.css');
+@import url('/Views/common/css/footer/footer.css');
+
+/* Custom boostrap */
+.col-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 60%;
+}
+
+.body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.border-right {
+    border-right: 1px solid rgba(221, 221, 221, 1);
+}
+
+.column-left {
+    padding: 20px 20px 20px 0;
+}
+
+.column-left a {
+    display: block;
+}
+
+.column-left img {
+    width: 100%;
+}
+
+.border-left {
+    border-left: 1px solid rgba(221, 221, 221, 1);
+}
+
+.column-right {
+    padding: 20px 0px 20px 20px;
+}
+
+.column-right a {
+    display: block;
+}
+
+.column-right img {
+    width: 100%;
+}
+
+.register {
+    padding: 20px;
+}
+
+.register h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+  
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    font-size: 1.3rem;
+    width: 100%;
+    height: 38px;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    display: inline-block;
+    background: var(--text-white-color);
+    border: 1px solid rgba(221, 221, 221, 1);
+}
+  
+input[type=text]:focus, input[type=password]:focus {
+    outline: none;
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 10%);
+}
+  
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: var(--header-bar);
+    color: white;
+    padding: 12px 20px;
+    margin: 30px 0 0 0 ;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 1.3rem;
+}
+  
+.registerbtn:hover {
+    opacity: 1;
+}
