@@ -8,7 +8,7 @@ productImages.forEach((productImage) => {
     productImage.addEventListener('mouseover', () => {
         timeShow = setTimeout(() => {
             productImage.src = newSrc;
-        }, 300);
+        }, 200);
     });
 
     productImage.addEventListener('mouseout', () => {

@@ -438,6 +438,30 @@ input[type=number]
     padding-bottom: 10px;
 }
 
+.product-layout {
+    position: relative;
+    border: 1px solid rgba(221, 221, 221, 1);
+    padding-bottom: 10px;
+}
+
+.product-layout--hover {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 118px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: var(--header-bar);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.product-layout:hover .product-layout--hover {
+    bottom: 123px;
+    opacity: 1;
+}
+
 .product-image {
     object-fit: cover;
     cursor: pointer;
@@ -732,7 +756,7 @@ input[type=number]
 @keyframes fadeInTop {
     from {
         opacity: 0;
-        transform: translateY(-20%);
+        transform: translateY(-8%);
     }
     to { opacity: 1 }
 }
