@@ -9,3 +9,61 @@
     margin: auto;
     padding-bottom: 30px;
 }
+
+.text{
+    font-family: "times new roman", times, serif;
+    font-size: 1.8rem;
+}
+
+.content {
+    padding: 20px 20px 0 0;
+}
+
+.content--border {
+    border-right: 1px solid rgba(221, 221, 221, 1);
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.about-content div {
+    font-size: 1.8rem;
+    opacity: 0.8;
+    text-align: justify;
+}
+
+b {
+    opacity: 0.8;
+    font-size: 1.9rem;
+}
+
+.webname {
+    opacity: 1;
+}
+
+.about-content {
+    margin-top: 50px;
+}
+
+.side-column {
+    padding: 20px;
+}
+
+.customer h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.customer-img img {
+    margin-bottom: 3px;
+    width: 70px;
+    height: 70px;
+}

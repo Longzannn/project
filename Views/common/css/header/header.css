@@ -1,3 +1,5 @@
+@import url('/Views/common/css/base/root.css');
+
 .header {
     height: 133px;
 }
