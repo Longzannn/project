@@ -51,7 +51,7 @@
             </div>
         </nav>
 
-        <div class="container-fluid">
+        <div class="container-fluid g-0">
             <div class="row">
                 <div class="col-lg-2">
                     <div class="user-profile">
@@ -102,44 +102,44 @@
                     </div>
                     <ul class="nav-menu">
                         <li class="nav-item">
-                            <a href="admin.php">
+                            <a href="">
                                 <i class="fa-solid fa-gauge"></i>
                                 <span>Dashboard</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="user.php">
+                            <a href="">
                                 <i class="fa-solid fa-user"></i>
                                 <span>Quản lí thành viên</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="category.php">
+                        <li class="nav-item nav-item--active">
+                            <a href="">
                                 <i class="fa-solid fa-list"></i>
                                 <span>Quản lí danh mục</span>
                             </a>
                         </li>
-                        <li class="nav-item nav-item--active">
+                        <li class="nav-item">
                             <a href="">
-                                <i class="fa-solid fa-basket-shopping"></i>
+                                <i class="fa-solid fa-list"></i>
                                 <span>Quản lí sản phẩm</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="order.php">
-                                <i class="fa-solid fa-clipboard-check"></i>
+                            <a href="">
+                                <i class="fa-solid fa-list"></i>
                                 <span>Quản lí đơn hàng</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="">
-                                <i class="fa-solid fa-comment"></i>
+                                <i class="fa-solid fa-list"></i>
                                 <span>Quản lí bình luận</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="">
-                                <i class="fa-solid fa-link"></i>
+                                <i class="fa-solid fa-list"></i>
                                 <span>Quản lí quảng cáo</span>
                             </a>
                         </li>
@@ -176,19 +176,29 @@
                                             class="form-control" placeholder="">
                                     </div>
                                     <div class="form-group">
-                                        <label>Giá sản phẩm</label>
+                                        <label>Kích thước sản phẩm</label>
+                                        <input value="" required name="prd_size"
+                                            class="form-control" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Giá sản phẩm niêm yết</label>
                                         <input value="" required name="prd_price"
                                             type="number" min="0" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Giá sản phẩm sau khi đã giảm</label>
+                                        <input value="" required name="prd_price"
+                                            type="number" min="0" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Lượt đánh giá</label>
+                                        <input value="" required name="prd_reviews"
+                                            class="form-control" placeholder="">
                                     </div>
                                     <div class="form-group">
                                         <label>Bảo hành</label>
                                         <input value="" required
                                             name="prd_warranty" type="text" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Phụ kiện</label>
-                                        <input value="" required
-                                            name="prd_accessories" type="text" class="form-control">
                                     </div>
                                     <div class="form-group">
                                         <label>Khuyến mãi</label>
@@ -209,7 +219,8 @@
                                     <div class="form-group">
                                         <label>Danh mục</label>
                                         <select name="cat_id" class="form-control">
-                                            <option></option>
+                                            <option>Nike</option>
+                                            <option>Lacoste</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
@@ -219,13 +230,17 @@
                                             <option value=2>Còn hàng</option>
                                         </select>
                                     </div>
-                                    <div class="form-group">
-                                        <label>Sản phẩm nổi bật</label>
-                                        <div class="checkbox">
-                                            <label>
-                                                <input name="prd_featured" type="checkbox" />
-                                            </label>
-                                        </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Sản phẩm nổi bật
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Sản phẩm mới
+                                        </label>
                                     </div>
                                     <div class="form-group">
                                         <label>Mô tả sản phẩm</label>

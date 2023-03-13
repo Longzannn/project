@@ -24,8 +24,9 @@
 }
 
 .role {
-    padding: 0 5px;
+    padding: 5px 10px;
     border-radius: 5px;
+    color: #fff;
 }
 
 .role--admin {
